@@ -1,0 +1,22 @@
+{
+  "name": "api.wallet",
+  "version": "1.0.0",
+  "description": "api to managment incomes and outcomes",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "typescript": "^3.9.6"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.6.1",
+    "@typescript-eslint/parser": "^3.6.1",
+    "eslint": "^7.4.0",
+    "ts-node-dev": "^1.0.0-pre.51"
+  }
+}
