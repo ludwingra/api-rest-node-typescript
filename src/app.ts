@@ -4,23 +4,22 @@ process.env.APP_ENV = process.env.APP_ENV || 'development';
 import dotenv from "dotenv";
 import express from "express";
 import { loadControllers } from "awilix-express";
+// Test injection dependencies
+import loadContainer from "./container";
 
 // Env files
 dotenv.config({
   path: `${__dirname}/../config/${process.env.APP_ENV}.env`
 });
 
-console.log(process.env.APP_FOO)
 
 const app: express.Application = express();
 
 // Routes
-app.get('/', (req, res, next) => {
-  res.send('Running ..');
-});
 
-// Test injection dependencies
-import { container } from "./container";
+// Container
+loadContainer(app);
+
 // Services
 
 // Controllers
