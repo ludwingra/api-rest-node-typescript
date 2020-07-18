@@ -1,1 +1,4 @@
 node_modules
+config/development.env
+config/production.env
+config/staging.env
